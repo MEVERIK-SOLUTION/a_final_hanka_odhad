@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulačka ceny nemovitosti</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Kalkulačka</h1>
+    <p>Interaktivní výpočet odhadované ceny</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Domů</a>
+    <a href="posudek.html">Znalecký posudek</a>
+    <a href="reakce.html">Naše reakce</a>
+    <a href="kritika.html">Kritika &amp; odhad</a>
+    <a href="analyza.html">Analýza lokality</a>
+    <a href="report.html">Souhrnný report</a>
+    <a href="kalkulacka.html">Kalkulačka</a>
+  </nav>
+
+  <div class="container">
+    <h2>Kalkulačka ceny nemovitosti</h2>
+    <p>
+      Využijte naši jednoduchou kalkulačku k výpočtu přibližné hodnoty nemovitosti. Stačí zadat
+      velikost plochy (v m²) a předpokládanou cenu za metr čtvereční (v Kč). Výsledek vám
+      okamžitě ukáže celkovou odhadovanou cenu.
+    </p>
+
+    <form onsubmit="event.preventDefault(); calculatePrice();">
+      <label for="area">Plocha (m²)</label>
+      <input type="number" id="area" min="1" step="0.1" required>
+
+      <label for="pricePerSqm">Odhadovaná cena za m² (Kč)</label>
+      <input type="number" id="pricePerSqm" min="1" step="100" required>
+
+      <button type="submit">Spočítat</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2026 Digitální znalecký posudek. Všechna práva vyhrazena.
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
