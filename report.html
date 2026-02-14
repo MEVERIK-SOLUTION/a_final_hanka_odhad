@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Souhrnný report s kompletním vyhodnocením znaleckého posudku a všech analýz.">
   <title>Souhrnný report</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header>
-    <h1>Souhrnný report</h1>
+    <h1>📋 Souhrnný report</h1>
     <p>Kompletní vyhodnocení a závěry</p>
   </header>
 
@@ -23,23 +24,311 @@
   </nav>
 
   <div class="container">
-    <h2>Souhrnný report</h2>
-    <p>
-      Závěrečná část obsahuje shrnutí všech předchozích analýz do jednoho uceleného přehledu.
-      Tento report kombinuje znalosti ze vstupního posudku, naší reakce, kritiky, cenového
-      odhadu a analýzy lokality. Cílem je poskytnout jasný závěr o hodnotě nemovitosti a
-      doporučení pro další postup.
-    </p>
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Souhrnný report</h2>
+        <p class="card-subtitle">
+          Datum vydání: 15. února 2026 | Číslo reportu: SR-2026-001
+        </p>
+      </div>
 
-    <p>
-      V rámci reálného projektu by zde mohl být k dispozici PDF ke stažení nebo interaktivní
-      dokument, kde by se dalo rovnou reagovat na konkrétní sekce. V této ukázce použijeme
-      shrnutí ve formě textu.
-    </p>
+      <p>
+        Tento dokument shrnuje všechny provedené analýzy, hodnocení a závěry týkající se 
+        znaleckého posudku nemovitosti na adrese <strong>Příkladová ulice 123, Praha 5</strong>. 
+        Report je určen pro komplexní přehled o hodnocené nemovitosti.
+      </p>
+
+      <div class="alert alert-info">
+        <strong>ℹ️ Poznámka:</strong> Tento report je možné vytisknout nebo exportovat 
+        pomocí funkce tisku ve vašem prohlížeči (Ctrl+P nebo Cmd+P).
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Shrnutí hodnocené nemovitosti</h3>
+      </div>
+
+      <div class="result-breakdown">
+        <div class="result-item">
+          <span>Typ nemovitosti</span>
+          <span>Bytová jednotka 3+kk</span>
+        </div>
+        <div class="result-item">
+          <span>Podlahová plocha</span>
+          <span>85 m²</span>
+        </div>
+        <div class="result-item">
+          <span>Lokalita</span>
+          <span>Praha 5 - Smíchov</span>
+        </div>
+        <div class="result-item">
+          <span>Rok výstavby</span>
+          <span>2015</span>
+        </div>
+        <div class="result-item">
+          <span>Stavební stav</span>
+          <span><span class="badge badge-success">Výborný</span></span>
+        </div>
+        <div class="result-item">
+          <span>Hodnocení lokality</span>
+          <span><span class="badge badge-success">Velmi dobrá</span> (8.5/10)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Cenové hodnocení</h3>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Metoda/Zdroj</th>
+            <th>Odhad</th>
+            <th>Poznámka</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Původní znalecký posudek</strong></td>
+            <td>7 200 000 Kč</td>
+            <td>Porovnávací metoda</td>
+          </tr>
+          <tr style="background: var(--bg-active);">
+            <td><strong>Náš revidovaný odhad</strong></td>
+            <td><strong>7 600 000 Kč</strong></td>
+            <td>Komplexní analýza</td>
+          </tr>
+          <tr>
+            <td>Tržní průměr v lokalitě</td>
+            <td>7 500 000 Kč</td>
+            <td>Srovnatelné nemovitosti</td>
+          </tr>
+          <tr>
+            <td>Optimistický odhad</td>
+            <td>7 900 000 Kč</td>
+            <td>Při rychlém prodeji</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; padding: 2rem; background: var(--gradient-primary); 
+                  color: white; border-radius: var(--border-radius-lg); margin: 2rem 0;">
+        <div style="font-size: 1rem; margin-bottom: 0.5rem;">Doporučená prodejní cena</div>
+        <div style="font-size: 3rem; font-weight: 700;">7 600 000 Kč</div>
+        <div style="font-size: 1rem; margin-top: 0.5rem; opacity: 0.9;">
+          (89 400 Kč/m² | +5.6% oproti původnímu posudku)
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Klíčová zjištění</h3>
+      </div>
+
+      <div class="card-grid">
+        <div class="card" style="border-left: 4px solid var(--success);">
+          <h4 style="color: var(--success); margin-bottom: 1rem;">✓ Silné stránky</h4>
+          <ul style="list-style: none; padding: 0; line-height: 1.8;">
+            <li>• Moderní nemovitost ve výborném stavu</li>
+            <li>• Prestižní lokalita s dobrou dopravní dostupností</li>
+            <li>• Kvalitní vybavení a kompletní rekonstrukce</li>
+            <li>• Rostoucí ceny v oblasti (+18% za 3 roky)</li>
+            <li>• Nízká kriminalita a bezpečné prostředí</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--warning);">
+          <h4 style="color: var(--warning); margin-bottom: 1rem;">⚠️ Body k zvážení</h4>
+          <ul style="list-style: none; padding: 0; line-height: 1.8;">
+            <li>• Omezené parkování v okolí</li>
+            <li>• Původní posudek podhodnocuje nemovitost</li>
+            <li>• Vysoké náklady na bydlení v oblasti</li>
+            <li>• Možné zpomalení růstu cen v budoucnu</li>
+            <li>• Vzdálenost od rychlostních komunikací</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Doporučení pro prodej</h3>
+      </div>
+
+      <div style="background: var(--bg-hover); padding: 1.5rem; border-radius: var(--border-radius-md); 
+                  border-left: 4px solid var(--success); margin-bottom: 1.5rem;">
+        <h4 style="margin-bottom: 0.75rem; color: var(--success);">
+          💰 Cenová strategie
+        </h4>
+        <p style="margin-bottom: 0;">
+          Doporučujeme nabídnout nemovitost za <strong>7 890 000 Kč</strong> s prostorem pro 
+          vyjednávání. Reálná prodejní cena by měla být v rozmezí <strong>7,5 - 7,7 mil. Kč</strong>. 
+          Minimální akceptovatelná cena: <strong>7 400 000 Kč</strong>.
+        </p>
+      </div>
+
+      <div style="background: var(--bg-hover); padding: 1.5rem; border-radius: var(--border-radius-md); 
+                  border-left: 4px solid var(--info); margin-bottom: 1.5rem;">
+        <h4 style="margin-bottom: 0.75rem; color: var(--info);">
+          📅 Časový harmonogram
+        </h4>
+        <p style="margin-bottom: 0;">
+          Optimální doba pro prodej je <strong>březen - červen 2026</strong>, kdy je na trhu 
+          nejvyšší poptávka. Očekávaná doba prodeje: <strong>45-60 dní</strong>. 
+          Doporučujeme zahájit marketing nejpozději do <strong>1. března 2026</strong>.
+        </p>
+      </div>
+
+      <div style="background: var(--bg-hover); padding: 1.5rem; border-radius: var(--border-radius-md); 
+                  border-left: 4px solid var(--primary-500);">
+        <h4 style="margin-bottom: 0.75rem; color: var(--primary-700);">
+          🎯 Marketingová strategie
+        </h4>
+        <ul style="margin-bottom: 0; padding-left: 1.5rem; line-height: 1.8;">
+          <li>Zdůraznit moderní vybavení a výborný stav</li>
+          <li>Připravit profesionální foto a video dokumentaci</li>
+          <li>Využít hlavní realitní portály + sociální sítě</li>
+          <li>Uspořádat otevřené dny pro potenciální kupce</li>
+          <li>Zdůraznit výhodnou lokalitu a dostupnost MHD</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Rizika a příležitosti</h3>
+      </div>
+
+      <div class="pros-cons-container">
+        <div>
+          <h4 style="color: var(--success); margin-bottom: 1rem;">
+            📈 Příležitosti pro zhodnocení
+          </h4>
+          <ul class="list-styled pros-list">
+            <li>Plánovaná výstavba tramvajové tratě (2027)</li>
+            <li>Revitalizace parku v okolí</li>
+            <li>Rostoucí poptávka v segmentu 3+kk</li>
+            <li>Demografický růst Prahy 5</li>
+            <li>Možnost krátkodobých pronájmů (Airbnb)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: var(--error); margin-bottom: 1rem;">
+            📉 Potenciální rizika
+          </h4>
+          <ul class="list-styled cons-list">
+            <li>Možné zvýšení úrokových sazeb hypotéka</li>
+            <li>Plánovaná výstavba konkurenčních projektů</li>
+            <li>Riziko poklesu poptávky při ekonomické krizi</li>
+            <li>Změny v dopravní situaci (uzavírky)</li>
+            <li>Regulace krátkodobých pronájmů městem</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Závěrečné shrnutí</h3>
+      </div>
+
+      <p>
+        Na základě komplexní analýzy všech dostupných informací, hodnocení původního znaleckého 
+        posudku, analýzy lokality a aktuálních tržních dat dospíváme k následujícím závěrům:
+      </p>
+
+      <ol style="list-style: decimal; padding-left: 2rem; line-height: 2;">
+        <li>
+          <strong>Nemovitost je ve výborném stavu</strong> a odpovídá moderním standardům bydlení 
+          v Praze 5.
+        </li>
+        <li>
+          <strong>Původní posudek podhodnocuje</strong> hodnotu nemovitosti přibližně o 5-6%.
+        </li>
+        <li>
+          <strong>Lokalita má výborný potenciál</strong> pro další růst hodnoty nemovitosti.
+        </li>
+        <li>
+          <strong>Doporučená prodejní cena je 7,6 mil. Kč</strong>, což odpovídá 89 400 Kč/m².
+        </li>
+        <li>
+          <strong>Optimální doba pro prodej je jaro 2026</strong> s očekávanou dobou prodeje 
+          45-60 dní.
+        </li>
+      </ol>
+
+      <div class="alert alert-success" style="margin-top: 2rem;">
+        <strong>✓ Celkové hodnocení:</strong> 
+        Jedná se o <strong>kvalitní investici</strong> s dobrým potenciálem zhodnocení. 
+        Doporučujeme nemovitost pro prodej i pro dlouhodobé držení s možností pronájmu.
+      </div>
+    </div>
+
+    <div class="card no-print" style="margin-top: 2rem; background: var(--gradient-blue); 
+                                      color: white; text-align: center;">
+      <h3 style="margin-bottom: 1.5rem; color: white;">Export a tisk</h3>
+      <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.9);">
+        Pro tisk tohoto reportu použijte funkci tisku ve vašem prohlížeči. 
+        Navigace a tlačítka budou automaticky skryty.
+      </p>
+      <button onclick="window.print()" class="btn btn-lg" 
+              style="background: white; color: var(--primary-700);">
+        🖨️ Vytisknout report
+      </button>
+    </div>
+
+    <div class="card no-print" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Další kroky</h3>
+      </div>
+
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <a href="kalkulacka.html" class="feature-card" style="text-decoration: none; color: inherit;">
+          <div class="feature-icon">��</div>
+          <h4 class="feature-title">Kalkulačka</h4>
+          <p class="feature-description">
+            Vyzkoušejte vlastní výpočty s různými scénáři.
+          </p>
+        </a>
+
+        <a href="posudek.html" class="feature-card" style="text-decoration: none; color: inherit;">
+          <div class="feature-icon">📊</div>
+          <h4 class="feature-title">Původní posudek</h4>
+          <p class="feature-description">
+            Prohlédněte si detailní původní dokumentaci.
+          </p>
+        </a>
+
+        <a href="index.html" class="feature-card" style="text-decoration: none; color: inherit;">
+          <div class="feature-icon">🏠</div>
+          <h4 class="feature-title">Zpět na začátek</h4>
+          <p class="feature-description">
+            Vraťte se na úvodní stránku aplikace.
+          </p>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <footer class="footer">
-    &copy; 2026 Digitální znalecký posudek. Všechna práva vyhrazena.
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Domů</a>
+        <a href="posudek.html">Posudek</a>
+        <a href="kalkulacka.html">Kalkulačka</a>
+        <a href="report.html">Report</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 MEVERIK SOLUTION. Digitální znalecký posudek. Všechna práva vyhrazena.
+      </p>
+    </div>
   </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>

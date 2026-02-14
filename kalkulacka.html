@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pokročilá kalkulačka pro výpočet ceny nemovitosti s více metodami, historií a exportem dat.">
   <title>Kalkulačka ceny nemovitosti</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header>
-    <h1>Kalkulačka</h1>
-    <p>Interaktivní výpočet odhadované ceny</p>
+    <h1>🧮 Kalkulačka</h1>
+    <p>Interaktivní výpočet odhadované ceny nemovitosti</p>
   </header>
 
   <nav>
@@ -23,28 +24,121 @@
   </nav>
 
   <div class="container">
-    <h2>Kalkulačka ceny nemovitosti</h2>
-    <p>
-      Využijte naši jednoduchou kalkulačku k výpočtu přibližné hodnoty nemovitosti. Stačí zadat
-      velikost plochy (v m²) a předpokládanou cenu za metr čtvereční (v Kč). Výsledek vám
-      okamžitě ukáže celkovou odhadovanou cenu.
-    </p>
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Kalkulačka ceny nemovitosti</h2>
+        <p class="card-subtitle">
+          Použijte naši pokročilou kalkulačku k výpočtu přibližné hodnoty nemovitosti. 
+          Výsledky se automaticky ukládají do historie.
+        </p>
+      </div>
 
-    <form onsubmit="event.preventDefault(); calculatePrice();">
-      <label for="area">Plocha (m²)</label>
-      <input type="number" id="area" min="1" step="0.1" required>
+      <form onsubmit="event.preventDefault(); calculatePrice();">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="area">Plocha (m²) <span style="color: var(--error);">*</span></label>
+            <input 
+              type="number" 
+              id="area" 
+              min="1" 
+              step="0.1" 
+              placeholder="např. 85.5" 
+              required
+              aria-label="Plocha nemovitosti v metrech čtverečních"
+            >
+          </div>
 
-      <label for="pricePerSqm">Odhadovaná cena za m² (Kč)</label>
-      <input type="number" id="pricePerSqm" min="1" step="100" required>
+          <div class="form-group">
+            <label for="pricePerSqm">Cena za m² (Kč) <span style="color: var(--error);">*</span></label>
+            <input 
+              type="number" 
+              id="pricePerSqm" 
+              min="1" 
+              step="100" 
+              placeholder="např. 85000" 
+              required
+              aria-label="Odhadovaná cena za metr čtvereční"
+            >
+          </div>
+        </div>
 
-      <button type="submit">Spočítat</button>
-    </form>
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          Spočítat cenu
+        </button>
+      </form>
 
-    <div id="result"></div>
+      <div id="result" class="empty" style="margin-top: 2rem;"></div>
+      <div id="breakdown"></div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">📊 O výpočtu</h3>
+      </div>
+      <div class="alert alert-info">
+        <p style="margin-bottom: 0.5rem;"><strong>Porovnávací metoda</strong> (výchozí)</p>
+        <p style="margin-bottom: 0;">
+          Výpočet vychází z násobku plochy a ceny za m². Výsledek zahrnuje 5% rezervu 
+          na případné nepředvídané náklady.
+        </p>
+      </div>
+      <ul class="list-styled">
+        <li>✓ Jednoduchý a rychlý výpočet</li>
+        <li>✓ Vhodný pro standardní nemovitosti</li>
+        <li>✓ Zahrnuje cenovou rezervu</li>
+        <li>✓ Automatické formátování výsledků</li>
+      </ul>
+    </div>
+
+    <div style="margin-top: 2rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3>📝 Historie výpočtů</h3>
+        <button onclick="exportData()" class="btn btn-secondary btn-sm no-print">
+          Exportovat data
+        </button>
+      </div>
+      <div id="history"></div>
+    </div>
+
+    <section class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">💡 Tipy pro používání kalkulačky</h3>
+      </div>
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div>
+          <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">📍 Zjistěte tržní ceny</h4>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0;">
+            Porovnejte ceny podobných nemovitostí v dané lokalitě před zadáním hodnot.
+          </p>
+        </div>
+        <div>
+          <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">🔍 Zohledněte stav</h4>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0;">
+            Upravte cenu za m² podle stavebního stavu a vybavení nemovitosti.
+          </p>
+        </div>
+        <div>
+          <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">💾 Ukládejte výpočty</h4>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0;">
+            Všechny výpočty se automaticky ukládají do historie pro pozdější srovnání.
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <footer class="footer">
-    &copy; 2026 Digitální znalecký posudek. Všechna práva vyhrazena.
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Domů</a>
+        <a href="posudek.html">Posudek</a>
+        <a href="kalkulacka.html">Kalkulačka</a>
+        <a href="report.html">Report</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 MEVERIK SOLUTION. Digitální znalecký posudek. Všechna práva vyhrazena.
+      </p>
+    </div>
   </footer>
 
   <script src="assets/script.js"></script>

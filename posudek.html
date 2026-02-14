@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vstupní znalecký posudek s detailními specifikacemi nemovitosti.">
   <title>Znalecký posudek</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header>
-    <h1>Znalecký posudek</h1>
+    <h1>📊 Znalecký posudek</h1>
     <p>Vstupní dokumentace pro hodnocení nemovitosti</p>
   </header>
 
@@ -23,23 +24,226 @@
   </nav>
 
   <div class="container">
-    <h2>Vstupní znalecký posudek</h2>
-    <p>
-      Tato stránka obsahuje původní znalecký posudek připravený pro hodnocenou nemovitost. Součástí
-      posudku jsou klíčové parametry: poloha, velikost, stavební stav, stáří budovy, výměra pozemku
-      a další faktory, které ovlivňují výslednou hodnotu. Cílem je poskytnout přehledné podklady,
-      ze kterých vycházejí další analýzy.
-    </p>
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Vstupní znalecký posudek</h2>
+        <p class="card-subtitle">Číslo posudku: ZP-2026-001 | Datum: 15. ledna 2026</p>
+      </div>
 
-    <p>
-      Pro detailní prohlížení mohou být součástí posudku i dokumenty ke stažení (např. PDF či
-      fotografie). V našem demonstračním projektu nabízíme pouze textovou ukázku, nicméně ve vašem
-      reálném projektu sem umístíte skutečné podklady.
-    </p>
+      <p>
+        Tento dokument obsahuje původní znalecký posudek připravený pro hodnocenou nemovitost. 
+        Posudek byl zpracován certifikovaným znalcem a zahrnuje všechny klíčové parametry 
+        ovlivňující tržní hodnotu nemovitosti.
+      </p>
+
+      <div class="alert alert-info">
+        <strong>ℹ️ Poznámka:</strong> Všechny uvedené údaje vycházejí z dostupné dokumentace 
+        a osobní prohlídky nemovitosti provedené dne 10. ledna 2026.
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Základní informace o nemovitosti</h3>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Parametr</th>
+            <th>Hodnota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Typ nemovitosti</strong></td>
+            <td>Bytová jednotka</td>
+          </tr>
+          <tr>
+            <td><strong>Adresa</strong></td>
+            <td>Příkladová ulice 123, Praha 5</td>
+          </tr>
+          <tr>
+            <td><strong>Podlahová plocha</strong></td>
+            <td>85 m²</td>
+          </tr>
+          <tr>
+            <td><strong>Dispozice</strong></td>
+            <td>3+kk</td>
+          </tr>
+          <tr>
+            <td><strong>Podlaží</strong></td>
+            <td>4. patro / 7 podlaží</td>
+          </tr>
+          <tr>
+            <td><strong>Výtah</strong></td>
+            <td>Ano</td>
+          </tr>
+          <tr>
+            <td><strong>Balkon/Terasa</strong></td>
+            <td>Balkon 6 m²</td>
+          </tr>
+          <tr>
+            <td><strong>Sklep</strong></td>
+            <td>Ano, 4 m²</td>
+          </tr>
+          <tr>
+            <td><strong>Parkování</strong></td>
+            <td>1x garážové stání</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Stavebně-technický stav</h3>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Kategorie</th>
+            <th>Stav</th>
+            <th>Poznámka</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rok výstavby</strong></td>
+            <td>2015</td>
+            <td>Moderní novostavba</td>
+          </tr>
+          <tr>
+            <td><strong>Stav budovy</strong></td>
+            <td><span class="badge badge-success">Výborný</span></td>
+            <td>Pravidelná údržba</td>
+          </tr>
+          <tr>
+            <td><strong>Okna</strong></td>
+            <td><span class="badge badge-success">Nová</span></td>
+            <td>Plastová, izolační trojsklo</td>
+          </tr>
+          <tr>
+            <td><strong>Topení</strong></td>
+            <td><span class="badge badge-success">Centrální</span></td>
+            <td>Dálkové vytápění</td>
+          </tr>
+          <tr>
+            <td><strong>Elektroinstalace</strong></td>
+            <td><span class="badge badge-success">Nová</span></td>
+            <td>Kompletní rekonstrukce</td>
+          </tr>
+          <tr>
+            <td><strong>Voda a kanalizace</strong></td>
+            <td><span class="badge badge-success">Bez závad</span></td>
+            <td>Měděné rozvody</td>
+          </tr>
+          <tr>
+            <td><strong>Podlahy</strong></td>
+            <td><span class="badge badge-success">Kvalitní</span></td>
+            <td>Laminát, keramická dlažba</td>
+          </tr>
+          <tr>
+            <td><strong>Koupelna a WC</strong></td>
+            <td><span class="badge badge-success">Moderní</span></td>
+            <td>Kompletně vybaveno</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Vybavení a příslušenství</h3>
+      </div>
+
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <ul class="list-styled pros-list">
+          <li>Vestavěná kuchyňská linka</li>
+          <li>Vestavěné spotřebiče</li>
+          <li>Klimatizace</li>
+          <li>Videotelefon</li>
+        </ul>
+        <ul class="list-styled pros-list">
+          <li>Bezpečnostní dveře</li>
+          <li>Garážové stání</li>
+          <li>Sklep</li>
+          <li>Balkon s výhledem</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Právní stav a vlastnictví</h3>
+      </div>
+      
+      <table>
+        <tbody>
+          <tr>
+            <td><strong>Vlastnictví</strong></td>
+            <td>Osobní</td>
+          </tr>
+          <tr>
+            <td><strong>Právní stav</strong></td>
+            <td><span class="badge badge-success">Bez závad</span></td>
+          </tr>
+          <tr>
+            <td><strong>Zatížení</strong></td>
+            <td>Bez zástavního práva</td>
+          </tr>
+          <tr>
+            <td><strong>Číslo LV</strong></td>
+            <td>12345</td>
+          </tr>
+          <tr>
+            <td><strong>Katastrální území</strong></td>
+            <td>Smíchov</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Závěrečné hodnocení znalce</h3>
+      </div>
+      <p>
+        Na základě provedené prohlídky, analýzy dostupné dokumentace a srovnání s obdobnými 
+        nemovitostmi v lokalitě, stanovuji <strong>obvyklou cenu</strong> předmětné nemovitosti 
+        na částku:
+      </p>
+      <div style="text-align: center; padding: 2rem; background: var(--gradient-primary); 
+                  color: white; border-radius: var(--border-radius-lg); margin: 1.5rem 0;">
+        <div style="font-size: 1rem; margin-bottom: 0.5rem;">Odhadovaná tržní hodnota</div>
+        <div style="font-size: 2.5rem; font-weight: 700;">7 200 000 Kč</div>
+        <div style="font-size: 0.875rem; margin-top: 0.5rem; opacity: 0.9;">
+          (cca 84 700 Kč/m²)
+        </div>
+      </div>
+      <p style="margin-bottom: 0;">
+        Tento odhad byl proveden dle standardních metod oceňování nemovitostí a zohledňuje 
+        aktuální stav trhu v dané lokalitě. Hodnota může být ovlivněna dalšími faktory, 
+        které nebyly součástí tohoto posudku.
+      </p>
+    </div>
   </div>
 
-  <footer class="footer">
-    &copy; 2026 Digitální znalecký posudek. Všechna práva vyhrazena.
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Domů</a>
+        <a href="posudek.html">Posudek</a>
+        <a href="kalkulacka.html">Kalkulačka</a>
+        <a href="report.html">Report</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 MEVERIK SOLUTION. Digitální znalecký posudek. Všechna práva vyhrazena.
+      </p>
+    </div>
   </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
