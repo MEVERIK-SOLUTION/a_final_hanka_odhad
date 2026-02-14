@@ -1,7 +1,7 @@
 # Digitální znalecký posudek – statická webová aplikace
 
 Tento repozitář obsahuje jednoduchou demonstrační aplikaci pro prezentaci
-znaleckého posudku nemovitosti. Strukturovaná složka `webapp/` zahrnuje
+znaleckého posudku nemovitosti. Repozitář v kořeni obsahuje
 několik statických HTML stránek, sdílené styly a skript pro kalkulačku.
 Projekt je postaven tak, aby bylo možné jej snadno hostovat na
 platformách jako **Vercel**, **Netlify** nebo **GitHub Pages**.
@@ -37,8 +37,8 @@ nezapomeňte náležitě upravit `vercel.json`.
 ## 📦 Jak připravit repozitář pro Vercel
 
 1. Vytvořte nový repozitář na GitHubu.
-2. Nahrajte obsah složky `webapp/` do kořenové úrovně repozitáře (tzn. `index.html`,
-   podstránkové HTML soubory, složku `assets/` a `vercel.json`).
+2. Ujistěte se, že v kořeni repozitáře jsou soubory `index.html`, ostatní podstránkové HTML soubory,
+   složka `assets/` a `vercel.json` (což je výchozí stav tohoto projektu).
 3. Na [Vercel.com/import/git](https://vercel.com/import/git) připojte svůj repozitář.
 4. Vercel rozpozná, že se jedná o statický web, a provede nasazení.
 
