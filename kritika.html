@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kritická analýza posudku s identifikací slabých míst a stanovením reálné hodnoty.">
   <title>Kritika a cenový odhad</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header>
-    <h1>Kritika a cenový odhad</h1>
+    <h1>📈 Kritika a cenový odhad</h1>
     <p>Identifikace slabých míst a stanovení reálné hodnoty</p>
   </header>
 
@@ -23,24 +24,216 @@
   </nav>
 
   <div class="container">
-    <h2>Kritika posudku a cenový odhad</h2>
-    <p>
-      Kritická analýza je důležitá pro odhalení slabých míst v posudku. V našem rozboru
-      identifikujeme nedostatky, nepřesnosti a potenciální zkreslení. Na jejich základě
-      připravujeme nový cenový odhad, který lépe reflektuje skutečný stav nemovitosti a
-      aktuální situaci na trhu.
-    </p>
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Kritická analýza posudku</h2>
+        <p class="card-subtitle">Odhalení nedostatků a stanovení reálné tržní hodnoty</p>
+      </div>
 
-    <p>
-      Cenový odhad vychází jak z námi získaných dat, tak z veřejně dostupných statistik,
-      podobných prodejů a specifických charakteristik lokality. V plnohodnotné aplikaci by
-      zde byl graf nebo tabulka znázorňující vývoj cen. Tato stránka nyní obsahuje pouze
-      demonstrační text.
-    </p>
+      <p>
+        Provedli jsme důkladnou analýzu původního znaleckého posudku s cílem identifikovat 
+        případné nedostatky, nepřesnosti nebo zkreslení. Na základě těchto zjištění a aktuálních 
+        tržních dat stanovujeme nový, přesnější cenový odhad.
+      </p>
+    </div>
+
+    <div id="priceChart"></div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Identifikované problémy v posudku</h3>
+      </div>
+
+      <div class="card-grid">
+        <div class="card" style="border-left: 3px solid var(--warning);">
+          <h4 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <span style="font-size: 1.5rem;">⚠️</span>
+            Metodologie výpočtu
+          </h4>
+          <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-secondary);">
+            Posudek používá zastaralou metodiku oceňování, která nezohledňuje aktuální trendy 
+            na realitním trhu. Doporučujeme kombinaci více metod pro přesnější výsledek.
+          </p>
+        </div>
+
+        <div class="card" style="border-left: 3px solid var(--error);">
+          <h4 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <span style="font-size: 1.5rem;">❌</span>
+            Srovnatelné nemovitosti
+          </h4>
+          <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-secondary);">
+            Vybrané srovnávací nemovitosti nejsou dostatečně reprezentativní. Některé jsou 
+            ve výrazně odlišných lokalitách, což zkresluje výslednou hodnotu.
+          </p>
+        </div>
+
+        <div class="card" style="border-left: 3px solid var(--warning);">
+          <h4 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <span style="font-size: 1.5rem;">⚠️</span>
+            Úpravy hodnoty
+          </h4>
+          <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-secondary);">
+            Aplikované korekční faktory pro stav a vybavení nejsou dostatečně zdůvodněny 
+            a neodpovídají skutečnému stavu nemovitosti.
+          </p>
+        </div>
+
+        <div class="card" style="border-left: 3px solid var(--info);">
+          <h4 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <span style="font-size: 1.5rem;">ℹ️</span>
+            Chybějící faktory
+          </h4>
+          <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-secondary);">
+            Posudek nezohledňuje některé důležité aspekty jako dostupnost parkování, 
+            výhled z okna nebo energetickou náročnost budovy.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Nový cenový odhad</h3>
+        <p class="card-subtitle">Založeno na aktuálních tržních datech a komplexní analýze</p>
+      </div>
+
+      <div class="result-breakdown">
+        <div class="result-item">
+          <span>Původní odhad znalce</span>
+          <span style="color: var(--text-muted);">7 200 000 Kč</span>
+        </div>
+        <div class="result-item">
+          <span>Korekce za metodiku</span>
+          <span style="color: var(--error);">-150 000 Kč</span>
+        </div>
+        <div class="result-item">
+          <span>Korekce za lokalitu</span>
+          <span style="color: var(--success);">+250 000 Kč</span>
+        </div>
+        <div class="result-item">
+          <span>Korekce za vybavení</span>
+          <span style="color: var(--success);">+100 000 Kč</span>
+        </div>
+        <div class="result-item">
+          <span>Aktuální tržní korekce</span>
+          <span style="color: var(--success);">+200 000 Kč</span>
+        </div>
+        <div class="result-item" style="font-size: 1.25rem; background: var(--bg-hover); 
+                                       padding: 1rem; border-radius: var(--border-radius-sm); margin-top: 1rem;">
+          <span><strong>Náš revidovaný odhad</strong></span>
+          <span style="color: var(--primary-700);"><strong>7 600 000 Kč</strong></span>
+        </div>
+      </div>
+
+      <div class="alert alert-success" style="margin-top: 2rem;">
+        <strong>✓ Závěr:</strong> Náš revidovaný odhad je o <strong>400 000 Kč (5,6%) vyšší</strong> 
+        než původní posudek. Tato úprava lépe reflektuje aktuální stav nemovitosti a tržní podmínky 
+        v dané lokalitě.
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Doporučení pro prodej/koupi</h3>
+      </div>
+
+      <div class="pros-cons-container">
+        <div>
+          <h4 style="color: var(--success); margin-bottom: 1rem;">✓ Pro prodávajícího</h4>
+          <ul class="list-styled pros-list">
+            <li>Nemovitost má potenciál vyššího zhodnocení</li>
+            <li>Lokalita se rychle rozvíjí</li>
+            <li>Výborný stavební stav umožňuje vyšší cenu</li>
+            <li>Vysoká poptávka v dané oblasti</li>
+            <li>Možnost zdůraznit moderní vybavení</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: var(--error); margin-bottom: 1rem;">✗ Pro kupujícího</h4>
+          <ul class="list-styled cons-list">
+            <li>Cena může být nadhodnocena až o 8%</li>
+            <li>Lokální trh ukazuje známky přehřátí</li>
+            <li>Měsíční náklady na bydlení jsou vysoké</li>
+            <li>Omezená dostupnost parkování pro návštěvy</li>
+            <li>Možnost korekce cen v následujících měsících</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <div class="card-header">
+        <h3 class="card-title">Srovnání s podobnými nemovitostmi</h3>
+      </div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Nemovitost</th>
+            <th>Plocha</th>
+            <th>Cena</th>
+            <th>Cena/m²</th>
+            <th>Stav</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: var(--bg-active);">
+            <td><strong>Hodnocená nemovitost</strong></td>
+            <td>85 m²</td>
+            <td><strong>7 600 000 Kč</strong></td>
+            <td><strong>89 400 Kč/m²</strong></td>
+            <td><span class="badge badge-success">Výborný</span></td>
+          </tr>
+          <tr>
+            <td>Podobný byt A</td>
+            <td>82 m²</td>
+            <td>7 300 000 Kč</td>
+            <td>89 000 Kč/m²</td>
+            <td><span class="badge badge-success">Dobrý</span></td>
+          </tr>
+          <tr>
+            <td>Podobný byt B</td>
+            <td>90 m²</td>
+            <td>8 100 000 Kč</td>
+            <td>90 000 Kč/m²</td>
+            <td><span class="badge badge-success">Výborný</span></td>
+          </tr>
+          <tr>
+            <td>Podobný byt C</td>
+            <td>78 m²</td>
+            <td>6 900 000 Kč</td>
+            <td>88 500 Kč/m²</td>
+            <td><span class="badge badge-warning">Průměrný</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
-  <footer class="footer">
-    &copy; 2026 Digitální znalecký posudek. Všechna práva vyhrazena.
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Domů</a>
+        <a href="posudek.html">Posudek</a>
+        <a href="kalkulacka.html">Kalkulačka</a>
+        <a href="report.html">Report</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 MEVERIK SOLUTION. Digitální znalecký posudek. Všechna práva vyhrazena.
+      </p>
+    </div>
   </footer>
+
+  <script src="assets/script.js"></script>
+  <script>
+    // Initialize chart data
+    window.chartData = [
+      { label: 'Původní posudek', value: 7200000 },
+      { label: 'Tržní průměr', value: 7500000 },
+      { label: 'Náš odhad', value: 7600000 },
+      { label: 'Optimistický odhad', value: 7900000 }
+    ];
+  </script>
 </body>
 </html>
