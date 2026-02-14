@@ -2,6 +2,17 @@
 
 Profesionální webová aplikace pro prezentaci a analýzu znaleckého posudku nemovitosti s moderním designem, interaktivními prvky a pokročilou kalkulačkou cen.
 
+## 🌐 Live Demo / Nasazení
+
+**📍 Repositář**: [github.com/MEVERIK-SOLUTION/a_final_hanka_odhad](https://github.com/MEVERIK-SOLUTION/a_final_hanka_odhad)
+
+**🚀 Nasazení webu**: Podívejte se do souboru [DEPLOYMENT.md](DEPLOYMENT.md) pro kompletní instrukce, jak nasadit web na:
+- Vercel (doporučeno) - `https://a-final-hanka-odhad.vercel.app`
+- Netlify - `https://a-final-hanka-odhad.netlify.app`
+- GitHub Pages - `https://meverik-solution.github.io/a-final-hanka-odhad`
+
+> **Poznámka**: Web je připraven k okamžitému nasazení! Stačí vybrat platformu a kliknout na "Deploy".
+
 ## ✨ Hlavní funkce
 
 - 📊 **Interaktivní kalkulačka** - Pokročilý výpočet ceny s více metodami, historií a exportem
