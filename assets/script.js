@@ -205,19 +205,19 @@ const Calculator = {
   /**
    * Income method calculation
    */
-  calculateIncome(monthlyRent, yield_rate = 0.05) {
+  calculateIncome(monthlyRent, yieldRate = 0.05) {
     const annualRent = monthlyRent * 12;
-    const propertyValue = annualRent / yield_rate;
+    const propertyValue = annualRent / yieldRate;
     
     return {
       method: 'Výnosová metoda',
       monthlyRent,
-      yield_rate: yield_rate * 100,
+      yieldRate: yieldRate * 100,
       total: propertyValue,
       breakdown: {
         'Měsíční nájem': monthlyRent,
         'Roční nájem': annualRent,
-        'Výnosnost': `${(yield_rate * 100).toFixed(1)}%`,
+        'Výnosnost': `${(yieldRate * 100).toFixed(1)}%`,
         'Celková hodnota': propertyValue
       }
     };
